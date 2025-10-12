@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="style.css">
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <title>Home page</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm barraNavegacao">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="assets/img/VM Logo 100px.png" alt="VM Logo" class="d-inline-block align-text-center">
-      VITOR DE MOURA
-    </a>
-    <ul class="navbar-nav ">
-        <li class="nav-item">
-            <a class="nav-link" href="about.html">Sobre</a>
+<div class="grid_home">
+    <nav class="barraNavegação navbar navbar-expand-sm ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/VM Logo 100px.png" alt="VM Logo" class="d-inline-block align-text-center">
+          VITOR DE MOURA
+        </a>
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Contato</a>
+            </li>
+        </ul>
+      </div>
+    
+    </nav>
+    <div class="menuMobile">
+      <ul  class="listaMobile">
+        <li>
+          <a href="about.html">Sobre Mim</a>
         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projetos</a>
+        <li>
+          <a href="about.html">Projetos</a>
         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="about.html">Contato</a>
+        <li>
+          <a href="about.html">Contato</a>
         </li>
-    </ul>
-  </div>
- 
-</nav>
-    <div class="container-xxl my-5 presentation">
-        <h1 class="display-1">VITOR DE MOURA <small>- Web Developer</small></h1>
+      </ul>
     </div>
+        <div class="presentation_label">
+            <img src="assets/img/VM_Logo-sem-fundo.png" class="logoMobile" alt="Logo VM" width="250px" height="250px">
+            <h1 class="presentation_text">VITOR DE MOURA <small>- Web Developer</small></h1>
+        </div>
+  </div>
    
 <script src="assets/script/script.js"></script>   
 </body>

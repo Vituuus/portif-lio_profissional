@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+//Colors
+$blue: #0077FF;
+$white: #FFFFFF;
+$green: #098171;
+$lightblue: rgba(108, 161, 221, 0.623);
+
+
+//Breakpoints
+$desktop: 1024px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500px;
+    color: black;
+}
+.grid_home{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 65%;
+    width: 100%;
+    height: 100%;
+
+    .presentation_label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        grid-row: 1;
+        background-color: rgba(108, 161, 221, 0.623);
+        h1{
+            font-size: 1.2rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+        }
+    }
+    .barraNavegação{
+        display: none;
+    }
+    .menuMobile {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        
+
+        .listaMobile{
+            list-style: none;
+            margin: 0;
+            padding: 20px;
+            
+            
+        }
+        a{
+            font-size: 1.7rem;
+            font-family: "Monserrat", sans-serif;
+            font-weight: 300;
+            color: $green;
+        }
+        a:link{
+            text-decoration: none;
+        }
+
+    }
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 95%;
+    width: 100%;
+    height: 100%;
+
+    .navMobile{
+        overflow: hidden;
+        background-color: $lightblue;
+        position: relative;
+    }
+
+    .navMobile #linkNav {
+    display: none;
+    }
+    .navMobile a {
+        float: left;
+        color: rgb(2, 2, 2);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .navMobile a.icon {
+        float: right;
+    }
+
+
+    .presentation_label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        grid-row: 2;
+        background-color: rgba(108, 161, 221, 0.623);
+        h1{
+            font-size: 1.2rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+        }
+    }
+    .barraNavegação{
+        display: none;
+    }
+    .menuMobile {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        
+
+        .listaMobile{
+            list-style: none;
+            margin: 0;
+            padding: 20px;
+            
+            
+        }
+        a{
+            font-size: 1.7rem;
+            font-family: "Monserrat", sans-serif;
+            font-weight: 300;
+            color: $green;
+        }
+        a:link{
+            text-decoration: none;
+        }
+
+    }
+    .about_label{
+       display: flex;
+       flex-direction: column;
+       padding: 15px;
+
+       h1{
+        font-size: 2.0rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+       }
+
+    }
+}
+@media only screen and (min-width: $desktop){
+    .grid_home{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 85%;
+        width: 100%;
+        height: 100%;
+
+        .presentation_label{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            grid-row: 2;
+            background-color: rgba(108, 161, 221, 0.623);
+            h1{
+                font-size: 2.7rem;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+            }
+            
+        }
+        .barraNavegação{
+            display: flex;
+            background-color:  rgba(108, 161, 221, 0.623);
+        }
+        .menuMobile{
+            display: none;
+        }
+        .logoMobile{
+            display: none;
+        }
+    }
+     .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 85%;
+        width: 100%;
+        height: 100%;
+
+        .presentation_label{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            grid-row: 2;
+            background-color: rgba(108, 161, 221, 0.623);
+            h1{
+                font-size: 2.7rem;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+            }
+            
+        }
+        .barraNavegação{
+            display: flex;
+            background-color:  rgba(108, 161, 221, 0.623);
+        }
+        .menuMobile{
+            display: none;
+        }
+        .logoMobile{
+            display: none;
+        }
+        .navMobile{
+            display: none;
+        }
+    }
+}
