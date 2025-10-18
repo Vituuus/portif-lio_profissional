@@ -14,53 +14,6 @@ html, body {
   color: black;
 }
 
-.grid_home {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 35% 65%;
-  width: 100%;
-  height: 100%;
-}
-.grid_home .presentation_label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  grid-row: 1;
-  background-color: rgba(108, 161, 221, 0.623);
-}
-.grid_home .presentation_label h1 {
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-.grid_home .barraNavegação {
-  display: none;
-}
-.grid_home .menuMobile {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: aliceblue;
-}
-.grid_home .menuMobile .listaMobile {
-  list-style: none;
-  margin: 0;
-  padding: 20px;
-}
-.grid_home .menuMobile a {
-  font-size: 1.7rem;
-  font-family: "Monserrat", sans-serif;
-  font-weight: 300;
-  color: #098171;
-}
-.grid_home .menuMobile a:link {
-  text-decoration: none;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 100%;
@@ -72,6 +25,8 @@ html, body {
   overflow: hidden;
   background-color: rgba(108, 161, 221, 0.623);
   position: relative;
+  width: 100%;
+  grid-row: 1;
 }
 .grid .navMobile #linkNav {
   display: none;
@@ -79,9 +34,9 @@ html, body {
 .grid .navMobile a {
   float: left;
   color: rgb(2, 2, 2);
-  padding: 14px 16px;
+  padding: 10px 13px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 .grid .navMobile a.icon {
   float: right;
@@ -95,10 +50,20 @@ html, body {
   grid-row: 2;
   background-color: rgba(108, 161, 221, 0.623);
 }
-.grid .presentation_label h1 {
-  font-size: 1.2rem;
+.grid .presentation_label .presentation_text {
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+.grid .presentation_label .navigation_arrow {
+  padding: 70px;
+  font-size: 3.7rem;
+}
+.grid .presentation_label .navigation_arrow a {
+  color: #FFFFFF;
+}
+.grid .presentation_label .navigation_arrow a:link {
+  text-decoration: none;
 }
 .grid .barraNavegação {
   display: none;
@@ -109,18 +74,11 @@ html, body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
 }
 .grid .menuMobile .listaMobile {
   list-style: none;
   margin: 0;
-  padding: 20px;
-}
-.grid .menuMobile a {
-  font-size: 1.7rem;
-  font-family: "Monserrat", sans-serif;
-  font-weight: 300;
-  color: #098171;
+  padding: 15px;
 }
 .grid .menuMobile a:link {
   text-decoration: none;
@@ -135,6 +93,19 @@ html, body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+}
+
+.presentation_label2 {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 100%;
+  height: 100%;
+}
+.presentation_label2 .presentation_text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -202,6 +173,16 @@ html, body {
   }
   .grid .navMobile {
     display: none;
+  }
+  .presentation_label2 {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .presentation_label2 .presentation_text2 {
+    text-align: center;
+    font-size: 1.9rem;
   }
 }
 
