@@ -14,6 +14,12 @@ html, body {
   color: black;
 }
 
+footer {
+  width: 100%;
+  height: 30%;
+  background-color: black;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 100%;
@@ -109,37 +115,6 @@ html, body {
 }
 
 @media only screen and (min-width: 1024px) {
-  .grid_home {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 85%;
-    width: 100%;
-    height: 100%;
-  }
-  .grid_home .presentation_label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    grid-row: 2;
-    background-color: rgba(108, 161, 221, 0.623);
-  }
-  .grid_home .presentation_label h1 {
-    font-size: 2.7rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-  }
-  .grid_home .barraNavegação {
-    display: flex;
-    background-color: rgba(108, 161, 221, 0.623);
-  }
-  .grid_home .menuMobile {
-    display: none;
-  }
-  .grid_home .logoMobile {
-    display: none;
-  }
   .grid {
     display: grid;
     grid-template-columns: 100%;
@@ -156,8 +131,8 @@ html, body {
     grid-row: 2;
     background-color: rgba(108, 161, 221, 0.623);
   }
-  .grid .presentation_label h1 {
-    font-size: 2.7rem;
+  .grid .presentation_label .presentation_text {
+    font-size: 3.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
@@ -175,14 +150,49 @@ html, body {
     display: none;
   }
   .presentation_label2 {
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(108, 161, 221, 0.623), rgba(62, 49, 241, 0.431372549), rgba(128, 1, 255, 0.5960784314));
+  }
+  .presentation_label2 .presentation_text2 {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .presentation_label3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
   }
-  .presentation_label2 .presentation_text2 {
+  .presentation_label3 .presentation_text3 {
+    padding: 125px;
     text-align: center;
-    font-size: 1.9rem;
+    font-weight: 700;
+  }
+  .presentation_label3 .presentation_text3 h2 {
+    color: #FFFFFF;
+  }
+  .presentation_label3 .presentation_text3 .bg-ux {
+    background-color: #9d61c2;
+  }
+  .presentation_label3 .presentation_text3 .bg-design {
+    background-color: #60d1a8;
+  }
+  .presentation_label3 .hardskills {
+    background-color: rgba(108, 161, 221, 0.623);
+  }
+  .presentation_label3 .softskills {
+    background-color: #FFFFFF;
+  }
+  .presentation_label3 .softskills h2 {
+    color: black;
   }
 }
 

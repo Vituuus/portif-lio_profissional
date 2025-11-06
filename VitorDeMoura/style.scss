@@ -5,7 +5,11 @@ $blue: #0077FF;
 $white: #FFFFFF;
 $green: #098171;
 $lightblue: rgba(108, 161, 221, 0.623);
-
+$purpleUx: #9d61c2;
+$lightgreen: #60d1a8;
+$greenblue: #3e31f16e;
+$purepurple: #8001ff98;
+$blackblur: rgba(0, 0, 0, 0.08);
 
 //Breakpoints
 $desktop: 1024px;
@@ -21,6 +25,11 @@ html, body{
     font-family: "Montserrat", sans-serif;
     font-weight: 500px;
     color: black;
+}
+footer{
+    width: 100%;
+    height: 30%;
+    background-color: black;
 }
 
 .grid{
@@ -133,39 +142,6 @@ html, body{
         }
     }
 @media only screen and (min-width: $desktop){
-    .grid_home{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 15% 85%;
-        width: 100%;
-        height: 100%;
-
-        .presentation_label{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            grid-row: 2;
-            background-color: rgba(108, 161, 221, 0.623);
-            h1{
-                font-size: 2.7rem;
-                font-family: "Montserrat", sans-serif;
-                font-weight: 500;
-            }
-            
-        }
-        .barraNavegação{
-            display: flex;
-            background-color:  rgba(108, 161, 221, 0.623);
-        }
-        .menuMobile{
-            display: none;
-        }
-        .logoMobile{
-            display: none;
-        }
-    }
      .grid{
         display: grid;
         grid-template-columns: 100%;
@@ -180,17 +156,18 @@ html, body{
             align-items: center;
             width: 100%;
             grid-row: 2;
-            background-color: rgba(108, 161, 221, 0.623);
-            h1{
-                font-size: 2.7rem;
+            background-color: $lightblue;
+            .presentation_text{
+                font-size: 3.5rem;
                 font-family: "Montserrat", sans-serif;
                 font-weight: 500;
+                
             }
             
         }
         .barraNavegação{
             display: flex;
-            background-color:  rgba(108, 161, 221, 0.623);
+            background-color:  $lightblue;
         }
         .menuMobile{
             display: none;
@@ -203,14 +180,60 @@ html, body{
         }
     }
     .presentation_label2{
-       display: grid;
-        grid-template-columns: 100%;
+       display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100%;
-
+        background: linear-gradient(180deg,$lightblue,$greenblue,$purepurple) ;
+      
+        
         .presentation_text2{
+            padding: 50px;
+            width: 100%;
+            height: 100%;
             text-align: center;
-            font-size: 1.9rem;
+            font-size: 1.3rem;      
+            background-color: $blackblur;
+                                  
+            
+        }
+        
+        
+    }
+    .presentation_label3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+       
+
+
+        .presentation_text3{
+            padding: 125px;
+            text-align: center;
+            font-weight: 700;
+
+            
+            h2{
+                color: $white;
+            }
+            .bg-ux{
+                background-color: $purpleUx;
+            }
+            .bg-design{
+                background-color: $lightgreen;
+            }
+        }
+        .hardskills{
+            background-color: $lightblue;
+        }
+        .softskills{
+            background-color: $white;
+            
+            h2{
+                color: black;
+            }
         }
     }
 }
